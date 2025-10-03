@@ -5,5 +5,5 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-docker build --tag lazyvim .
-docker run -it --rm --volume "$1":/workdir lazyvim nvim
+docker build --tag lazyvim_alpine .
+docker run -it --rm -v "$1":/vol -w /vol lazyvim_alpine nvim
