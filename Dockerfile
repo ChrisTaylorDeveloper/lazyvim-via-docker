@@ -4,6 +4,7 @@ WORKDIR /root
 
 RUN apk add \
     alpine-sdk \
+    bash \
     build-base \
     cmake \
     coreutils \
@@ -11,6 +12,7 @@ RUN apk add \
     fzf \
     gettext-tiny-dev \
     git \
+    gzip \
     lazygit \
     ripgrep \
     --no-cache
